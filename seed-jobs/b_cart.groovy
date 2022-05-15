@@ -1,15 +1,12 @@
 
 multibranchPipelineJob('CI-Pipelines/cart') {
     branchSources {
-        git {
-            id('123456789') // IMPORTANT: use a constant and unique identifier
-            remote('https://github.com/abjbalaji/cart.git')
+        github {
+            id('23232323') // IMPORTANT: use a constant and unique identifier
+            scanCredentialsId('Github')
+            repository('https://github.com/abjbalaji/cart')
+        }
+                   }
 
-        }
-    }
-    orphanedItemStrategy {
-        discardOldItems {
-            numToKeep(20)
-        }
-    }
+
 }
