@@ -2,7 +2,7 @@
   shell: "{{JENKINS_CLI_PREFIX}} who-am-i"
 
 - name: Create jenkins job
-  include_tasks: job.yml
+  include_tasks: mb-job.yml
   loop:
     - {name: "sample1", repoName: "sample2" }
 
