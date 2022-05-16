@@ -1,10 +1,14 @@
 - name: Check the Jenkins connection
   shell: "{{JENKINS_CLI_PREFIX}} who-am-i"
 
-- name: Create jenkins job
+- name: Create jenkins Multi branch job
   include_tasks: mb-job.yml
   loop:
-    - {name: "sample1", repoName: "sample2" }
+    - {name: "CI-Pipelines", repoName: "ALL-CI-Pipelines" }
 
+- name: Create jenkins Folder job
+  include_tasks: folders-job.yml
+  loop:
+    - {name: "sample1", description: "sample2" }
 
 
