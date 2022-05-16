@@ -15,7 +15,7 @@
 
 - name: Create a Job
   when: check_job.rc == 3
-  shell: "cat /tmp/job.yml | {{JENKINS_CLI_PREFIX}} create-job {{item.name}}"
+  shell: "cat sample.yml | {{JENKINS_CLI_PREFIX}} create-job {{item.name}}"
 
 #- name: Update job
 #  when: check_job.rc == 0
