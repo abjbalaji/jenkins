@@ -1,7 +1,7 @@
 - name: Check if job exists
   shell: "{{JENKINS_CLI_PREFIX}} get-job {{item.name}}"
   ignore_errors: true
-  regster: check_job
+  register: check_job
 
 
 - name: Generate unique string
