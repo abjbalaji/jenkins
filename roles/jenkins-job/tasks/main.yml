@@ -1,5 +1,6 @@
 - name: Check the Jenkins connection
   shell: "{{JENKINS_CLI_PREFIX}} who-am-i"
+
 - name: Create jenkins job
   include_tasks: job.yml
   loop:
