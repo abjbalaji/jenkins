@@ -4,7 +4,7 @@
 - name: Create jenkins Multi branch job
   include_tasks: mb-job.yml
   loop:
-    - {name: "sample2", repoName: "sample2"}
+    - {name: "cart", repoName: "cart", dirName: "CI-Pipelines/"}
 
 
 - name: Create jenkins Folder job
