@@ -20,3 +20,4 @@
 - name: Update job
   when: check_job.rc == 0
   shell: "cat /tmp/job.xml | {{JENKINS_CLI_PREFIX}} update-job {{item.name}}"
+
