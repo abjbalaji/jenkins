@@ -5,6 +5,7 @@
   include_tasks: mb-job.yml
   loop:
     - {name: "cart", repoName: "cart", dirName: "CI-Pipelines/"}
+    - {name: "test", repoName: "test", dirName: ""}
 
 
 - name: Create jenkins Folder job
