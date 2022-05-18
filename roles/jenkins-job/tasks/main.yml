@@ -3,7 +3,7 @@
 
 - name: Create jenkins Multi branch job
   include_tasks: mb-job.yml
-  loop: {{MB_JOBS}}
+  loop: "{{MB_JOBS}}"
 
 
 
