@@ -2,6 +2,5 @@
   hosts: localhost
   vars_files:
     - mb-jobs-list.yml
-
   roles:
     - jenkins-job
